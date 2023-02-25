@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">AvengersAssemble</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!--My Strings-->
+    <string name="login_title">MOVIES</string>
+    <string name="hint_username">Username</string> <!--patient-->
+    <string name="username_value">9360505555</string>
+    <string name="hint_password">Password</string> <!--Test@987-->
+    <string name="password_value">Happy@1907</string>
+    <string name="your_string_here">
+        This is an <u>underline</u>.
+    </string>
+    <string name="tab_login"><u>Login</u>
+    </string>
+    <string name="tab_register"><u>Register</u>
+    </string>
+    <string name="tab_login_u">Login</string>
+    <string name="tab_register_u">Register</string>
+    <string name="add_favourite">Add</string>
+    <string name="remove_txt">Remove</string>
+    <string name="add_txt">Add</string>
+    <string name="privacyPolicy">By Signing in you are agreeinh \n our<a href="https://androiddeveloper.com"> Term and privacy policy</a></string>
+    <string name="forget_password"><a href="https://androiddeveloper.com"> Forget Password?</a></string>
+</resources>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_navigation"
+    app:startDestination="@id/splashScreenFragment">
+
+    <fragment
+        android:id="@+id/splashScreenFragment"
+        android:name="com.example.avengersassemble.presentation.view.SplashScreenFragment"
+        android:label="fragment_splash_screen"
+        tools:layout="@layout/fragment_splash_screen" >
+        <action
+            android:id="@+id/action_splashScreenFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.example.avengersassemble.presentation.view.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_loginFragment_to_mainScreenFragment"
+            app:destination="@id/mainScreenFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/mainScreenFragment"
+        android:name="com.example.avengersassemble.presentation.view.MainScreenFragment"
+        android:label="fragment_main_screen"
+        tools:layout="@layout/fragment_main_screen" >
+        <action
+            android:id="@+id/action_mainScreenFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+        <argument
+            android:name="userId"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_mainScreenFragment_to_biographyFragment"
+            app:destination="@id/biographyFragment" />
+    </fragment>
+    <dialog
+        android:id="@+id/biographyFragment"
+        android:name="com.example.avengersassemble.presentation.view.BiographyFragment"
+        android:label="fragment_biography"
+        tools:layout="@layout/fragment_biography" >
+        <action
+            android:id="@+id/action_biographyFragment_to_mainScreenFragment"
+            app:destination="@id/mainScreenFragment" />
+        <argument
+            android:name="isFavourite"
+            app:argType="boolean" />
+        <argument
+            android:name="data"
+            app:argType="com.example.avengersassemble.data.local.entity.FavouriteList" />
+    </dialog>
+</navigation>
